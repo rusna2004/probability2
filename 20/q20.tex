@@ -68,39 +68,55 @@
 
 20. Two dice are thrown simultaneously. What is the probability that the sum of the numbers appearing on the dice is (\romannumeral1) 7? (\romannumeral2) a prime number? (\romannumeral3) 1?
 
-\solution Let X and Y represent two dice. We know,
+\solution Let X and Y represent number appearing on two dice. Let Z be the sum of the numbers appearing on two dice.
+$$Z=X+Y$$
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+random variables & description \\
+\hline
+X & number appearing on first dice \\
+\hline
+Y & number appearing on second dice \\
+\hline
+Z & sum of numbers appearing on both dice \\
+\hline
+\end{tabular}
+\label{tab:ncert_exemplar/10/13/3/20}
+\end{table}
+
+ We know,
 \begin{align}
-\Pr(X+Y=n) = 
+\Pr(Z=n) = 
 \begin{cases}
 0 &  n \leq{1} \\
 \frac{n-1}{36} &  2 \leq{x} \leq{7} \\
 \frac{13-n}{36} &  7 < n \leq{12} \\
 0 &  n>12
+\label{eq:ncert_exemplar/10/13/3/20}
 \end{cases}
 \end{align}
 
 Then,
 
-(\romannumeral1) Let E be the event that the sum is 7.
+(\romannumeral1) The sum of numbers appearing on the dice is 7. Then from \eqref{eq:ncert_exemplar/10/13/3/20},
 \begin{align}
-\Pr(E) &= Pr(X+Y=7) \\
-&= \frac{7-1}{36} \\
+\Pr(Z=7) &= \frac{7-1}{36} \\
 &= \frac{1}{6}
 \end{align}
 
-(\romannumeral2) Let F be the event that the sum is a prime number.
+(\romannumeral2) The sum of numbers appearing on dice is a prime number. From \eqref{eq:ncert_exemplar/10/13/3/20},
 \begin{align}
-\Pr(F) &= Pr(X+Y=2) + \Pr(X+Y=3) + \Pr(X+Y=5) + \Pr(X+Y=7) + \Pr(X+Y=11) \\
-&= \frac{2-1}{36} + \frac{3-1}{36} + \frac{5-1}{36} + \frac{7-1}{36} + \frac{13-11}{36} \\
+\Pr(Z=\text{prime number}) &= Pr(Z=2) + \Pr(Z=3) + \Pr(Z=5) + \Pr(Z=7) + \Pr(Z=11) \\
 &= \frac{1}{36} + \frac{2}{36} + \frac{4}{36} + \frac{6}{36} + \frac{2}{36} \\
-&= \frac{1+2+4+6+2}{36} \\
 &= \frac{15}{36} \\
 &= \frac{5}{12}
 \end{align}
 
-(\romannumeral3) Let G be the event that the sum is 1. Then,
+(\romannumeral3) From \eqref{eq:ncert_exemplar/10/13/3/20}, the probability of the sum of numbers appearing on the dice is 1 is, 
 \begin{align}
-\Pr(G) &= \Pr(X+Y=1) \\
-&= 0
+\Pr(Z=1) &= 0
 \end{align}
 \end{document}
