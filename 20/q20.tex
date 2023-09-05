@@ -90,6 +90,7 @@ Z & sum of numbers appearing on both dice \\
 \hline
 \end{tabular}
 \label{tab:ncert_exemplar/10/13/3/20}
+\caption{Random Variables for die rolls}
 \end{table}
 
  We know,
@@ -105,23 +106,24 @@ Z & sum of numbers appearing on both dice \\
 \end{align}
 
 Then,
-
-(\romannumeral1) The sum of numbers appearing on the dice is 7. Then from \eqref{eq:ncert_exemplar/10/13/3/20},
+\begin{enumerate}
+\item{The sum of numbers appearing on the dice is 7. Then from \eqref{eq:ncert_exemplar/10/13/3/20},
 \begin{align}
 \Pr(Z=7) &= \frac{7-1}{36} \\
 &= \frac{1}{6}
 \end{align}
-
-(\romannumeral2) The sum of numbers appearing on dice is a prime number. From \eqref{eq:ncert_exemplar/10/13/3/20},
+}
+\item{ The sum of numbers appearing on dice is a prime number. From \eqref{eq:ncert_exemplar/10/13/3/20},
 \begin{align}
-\Pr(Z=\text{prime number}) &= Pr(Z=2) + \Pr(Z=3) + \Pr(Z=5) + \Pr(Z=7) + \Pr(Z=11) \\
+\Pr(Z \text{ is a prime number}) &= \sum_{p \in \{2, 3, 5, 7, 11\}} \Pr(Z = p) \\
 &= \frac{1}{36} + \frac{2}{36} + \frac{4}{36} + \frac{6}{36} + \frac{2}{36} \\
-&= \frac{15}{36} \\
 &= \frac{5}{12}
 \end{align}
-
-(\romannumeral3) From \eqref{eq:ncert_exemplar/10/13/3/20}, the probability of the sum of numbers appearing on the dice is 1 is, 
+}
+\item{ From \eqref{eq:ncert_exemplar/10/13/3/20}, the probability of the sum of numbers appearing on the dice is 1 is, 
 \begin{align}
 \Pr(Z=1) &= 0
 \end{align}
+}
+\end{enumerate}
 \end{document}
